@@ -1,0 +1,98 @@
+/*
+.content-sidebar-wrap {
+	float: left;
+}
+
+.content-sidebar .content {
+	float: left;
+}
+
+.content-sidebar .sidebar-primary {
+	float: right;
+}*/
+
+/*----- Main Grid -----*/
+
+.content-sidebar-wrap {
+	display: grid;
+	grid-gap: 10px;
+}
+
+/*----- Width Setting -----*/
+
+.full-width-content .content {
+	max-width: 100%;
+	word-wrap: break-word;
+}
+
+.content-sidebar .content,
+.sidebar-content .content {
+	max-width: 880px;
+	word-wrap: break-word;
+}
+
+.sidebar-content-content .content,
+.content-sidebar-sidebar .content {
+	max-width: 800px;
+	word-wrap: break-word;
+}
+
+.sidebar-primary {
+	max-width: 360px;
+}
+
+/*----- Column Setting -----*/
+
+.sidebar-sidebar-content,
+.content-sidebar-sidebar {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.content-sidebar .content-sidebar-wrap,
+.sidebar-content .content-sidebar-wrap {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/*----- Grid Nameing -----*/
+
+.sidebar-primary {
+	grid-area: sidebar-p;
+}
+
+.sidebar-secondary {
+	grid-area: sidebar-s;
+}
+
+.content {
+	grid-area: content;
+}
+
+/*----- Grid Area Setting -----*/
+
+.content-sidebar .content-sidebar-wrap {
+	grid-template-areas: "content sidebar-p";
+}
+
+.sidebar-content .content-sidebar-wrap {
+	grid-template-areas: "sidebar-p content";
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	grid-template-areas: "content sidebar-p sidebar-s";
+}
+
+.sidebar-sidebar-content .content-sidebar-wrap {
+	grid-template-areas: "sidebar-p sidebar-s content";
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap {
+	grid-template-areas: "sidebar-p content sidebar-s";
+}
+
+.full-width-content .content-sidebar-wrap {
+	grid-template-areas: "content content content";
+}
+
+/*----- Grid Float -----*/
+
+
