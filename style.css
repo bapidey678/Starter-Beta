@@ -374,8 +374,7 @@ p {
 
 /*----- Link -----*/
 
-a,
-a:link {
+a {
 	color: blue;
 	text-decoration: underline;
 }
